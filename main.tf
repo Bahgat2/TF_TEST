@@ -17,3 +17,9 @@ resource "aws_instance" "pc_vcm" {
     dep = "PKI"
   }
 }
+resource "aws_iam_user" "tota" {
+  name = "tota"
+  tags = {
+    haya = "shatora"
+  }
+}
